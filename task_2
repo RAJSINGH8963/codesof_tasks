@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std ;
+
+int main(){
+    int FIRST_NUMBER , SECOND_NUMBER;
+    cout<<"ENTER A TWO NUMBER TO PERFORM A BASIC ARTHMETIC OPERATION :";
+    cin>>FIRST_NUMBER>>SECOND_NUMBER;
+    int OPTION ;
+    cout<<"EMTER 1 FOR ADDITION OF TWO NUMBER. "<<endl<<"ENTER  2 FOR SUBTRACTION TWO NUMBER. "<<endl<<"ENTER 3 FOR MULTIPLITION OF TWO NUMBER. "<<endl<<"ENTER 4 FOR DIVISION OF TWO NUMBER. "<<endl;
+  cin>>OPTION;
+  switch(OPTION){
+      case 1 : cout<<"ADDITION OF "<<FIRST_NUMBER<<" AND "<<SECOND_NUMBER<<" IS "<<FIRST_NUMBER + SECOND_NUMBER;
+            break;
+    case 2 :   cout<<"SUBTRACTION OF "<<FIRST_NUMBER<<" AND "<<SECOND_NUMBER<<" IS "<<FIRST_NUMBER - SECOND_NUMBER;
+            break;  
+    case 3 :   cout<<"MULTIPLITION OF "<<FIRST_NUMBER<<" AND "<<SECOND_NUMBER<<" IS "<<FIRST_NUMBER * SECOND_NUMBER;
+            break;        
+    case 4 : cout<<"DIVISION OF "<<FIRST_NUMBER<<" AND "<<SECOND_NUMBER<<" IS "<<FIRST_NUMBER / SECOND_NUMBER;
+            break;    
+            default : cout<<"ENTER A VAILD OPTION .";
+  }
+     return 0 ;
+}
